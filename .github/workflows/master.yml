@@ -19,6 +19,9 @@ jobs:
             os: windows-latest
           - node-version: 12
             os: ubuntu-latest
+        include:
+          - node-version: 18
+            os: ubuntu-22.04
     runs-on: ${{ matrix.os }}
     steps:
     - name: Clone the repo
